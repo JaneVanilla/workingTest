@@ -3,11 +3,11 @@
     <carousel :items="1" :nav="true" :loop="true" :dots="true" >
           <carousel-component
             v-for="item in bannerList"
-            v-bind:todo="item"
-            v-bind:key="item.id"
-            v-bind:title="item.title"
-            v-bind:title2="item.title2"
-            v-bind:text="item.text"
+            :todo="item"
+            :key="item.id"
+            :title="item.title"
+            :title2="item.title2"
+            :text="item.text"
           >
           </carousel-component>
     </carousel>

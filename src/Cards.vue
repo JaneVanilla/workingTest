@@ -4,15 +4,15 @@
 
     catalog-item(
     v-for="(datas) in computedUsers"
-    v-bind:key="datas.id"
-    v-bind:title="datas.name"
-    v-bind:address_link="datas.address_link"
-    v-bind:address="datas.address"
-    v-bind:metrage="datas.info[0].value"
-    v-bind:bedrooms="datas.info[1].value"
-    v-bind:buthrooms="datas.info[2].value"
-    v-bind:price="datas.price"
-    v-bind:gallery="datas.gallery[0]"
+    :key="datas.id"
+    :title="datas.name"
+    :address_link="datas.address_link"
+    :address="datas.address"
+    :metrage="datas.info[0].value"
+    :bedrooms="datas.info[1].value"
+    :buthrooms="datas.info[2].value"
+    :price="datas.price"
+    :gallery="datas.gallery[0]"
     )
 
     ul.pagination-list
