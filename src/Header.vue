@@ -8,7 +8,6 @@
         div.page-header__navigation
           a.page-header__navigation-link.active(href="#")
               span.page-header__navigation-item Homes
-              span.page-header__navigation-circle
           a.page-header__navigation-link(href="#")
             span.page-header__navigation-item Premier
             span
@@ -62,6 +61,7 @@
   .page-header__navigation
     display: flex
     align-self: center
+    align-self: flex-end
 
   .page-header__navigation-link
     display: flex
@@ -73,6 +73,8 @@
     font-size: 14px
     line-height: 18px
     font-weight: 500
+    height: 32px
+    box-sizing: border-box
 
   .page-header__navigation-link:hover
     opacity: 0.7
@@ -85,15 +87,26 @@
     cursor: unset
 
   .page-header__navigation-item
+    position: relative
     display: block
-    margin-bottom: 8px
+    height: 100%
+    font-size: 14px
+    line-height: 22px
 
-  .page-header__navigation-circle
-    display: block
+  .page-header__navigation-item:after
+    display: none
+    position: absolute
+    left: calc(50% - 2.5px)
+    bottom: 0
+    content: ""
     width: 5px
     height: 5px
     background: $textColor1
     border-radius: 50%
+
+  .page-header__navigation-link.active .page-header__navigation-item:after
+    display: block
+
   
   /*login btn*/
 
