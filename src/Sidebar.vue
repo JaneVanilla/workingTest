@@ -21,8 +21,25 @@
         </div>
         <div class="sidebar__filter-options">
           <h2 class="sidebar__filter-title">Options</h2>
-          <div class="slider__checkbox-block">
-            <p-check class="pretty p-image p-plain">
+          <div class="slider__form">
+              <div class="input-block">
+                <input type="checkbox" id="concierge" name="Concierge">
+                <label for="concierge">Concierge</label>
+              </div>
+              <div class="input-block">
+                <input type="checkbox" id="house" name="house">
+                <label for="house">Energy Efficient House</label>
+              </div>
+              <div class="input-block">
+                <input type="checkbox" id="historyBuilding" name="historyBuilding">
+                <label for="historyBuilding">Historical Building</label>
+              </div>
+              <div class="input-block">
+                <input type="checkbox" id="smartHouse" name="smartHouse" checked>
+                <label for="smartHouse">Smart House</label>
+              </div>
+
+<!--            <p-check class="pretty p-image p-plain">
               <img slot="extra" class="image" src="src/assets/checkIcon.png">
               Concierge
             </p-check>
@@ -37,7 +54,7 @@
             <p-check class="pretty p-image p-plain">
               <img slot="extra" class="image" src="src/assets/checkIcon.png">
               Smart House
-            </p-check>
+            </p-check>-->
           </div>
         </div>
         <div class="sidebar__filter-price">
@@ -208,20 +225,68 @@
   .sidebar__currency-button--center:hover .sidebar__currency-button--right
     border-left: 0
 
-  input[type="checkbox" i]
+  /*input[type="checkbox" i]
    width: 18px
    height: 18px
    border: 2px solid #DBDBDB
-   cursor: pointer
+   cursor: pointer*/
 
-  .slider__checkbox-block
+
+  /**Checkbox Styles**/
+
+  .slider__form
     margin-bottom: 30px
-  
+    text-align: left
+    
+  .input-block
+    position: relative
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    cursor: pointer
+
+  .input-block label
+    position: relative
+    padding-left: 30.8px
+    font-size: 14px
+    line-height: 22px
+    font-weight: 400
+    color: #292B3F
+    cursor: pointer
+
+  .input-block label:after
+    position: absolute
+    top: 0
+    left: 0
+    content: ""
+    display: block
+    width: 20px
+    height: 20px
+    border: 1px solid #DBDBDB
+    cursor: pointer
+    border-radius: 2px
+
+
+
+  .input-block input[type="checkbox" i]
+    position: absolute
+    width: 20px
+    height: 20px
+    margin: 0
+    margin-right: 10.8px
+    opacity: 0
+    z-index: 2
+
+  .input-block input[type=checkbox]:checked ~ label:after
+    background:  url("assets/checkbox.png") no-repeat center, #FCE144
+    border: 1px solid #FCE144
+    cursor: pointer
+
   .checkbox-item
     text-align: left
 
 
-  /**Checkbox Styles**/
+  /**Checkbox Styles old**/
 
   .pretty
     display: block
