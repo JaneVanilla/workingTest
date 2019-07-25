@@ -38,23 +38,6 @@
                 <input type="checkbox" id="smartHouse" name="smartHouse" checked>
                 <label for="smartHouse">Smart House</label>
               </div>
-
-<!--            <p-check class="pretty p-image p-plain">
-              <img slot="extra" class="image" src="src/assets/checkIcon.png">
-              Concierge
-            </p-check>
-            <p-check class="pretty p-image p-plain">
-              <img slot="extra" class="image" src="src/assets/checkIcon.png">
-              Energy Efficient House
-            </p-check>
-            <p-check class="pretty p-image p-plain">
-              <img slot="extra" class="image" src="src/assets/checkIcon.png">
-              Historical Building
-            </p-check>
-            <p-check class="pretty p-image p-plain">
-              <img slot="extra" class="image" src="src/assets/checkIcon.png">
-              Smart House
-            </p-check>-->
           </div>
         </div>
         <div class="sidebar__filter-price">
@@ -82,8 +65,6 @@
 
   }
 </script>
-
-
 
 <style lang="sass">
   @import '~pretty-checkbox/src/pretty-checkbox.scss'
@@ -225,12 +206,6 @@
   .sidebar__currency-button--center:hover .sidebar__currency-button--right
     border-left: 0
 
-  /*input[type="checkbox" i]
-   width: 18px
-   height: 18px
-   border: 2px solid #DBDBDB
-   cursor: pointer*/
-
 
   /**Checkbox Styles**/
 
@@ -285,44 +260,6 @@
 
   .checkbox-item
     text-align: left
-
-
-  /**Checkbox Styles old**/
-
-  .pretty
-    display: block
-    margin-bottom: 10px
-    text-align: left
-
-  .pretty input
-    width: 20px
-    height: 20px
-    border: 1px solid #DBDBDB
-    cursor: pointer
-    border-radius: 2px
-
-
-  .pretty .state label:before,
-  .pretty .state label:after,
-  .pretty.p-image .state img
-    width: 20px!important
-    height: 20px!important
-    top: 0
-    -webkit-border-radius: 3px
-    -moz-border-radius: 3px
-    border-radius: 3px
-
-  .pretty.p-image .state img
-    transform: unset
-
-
-  .pretty .state label
-    padding-left: 10px;
-    font-size: 14px!important
-    line-height: 22px!important
-    font-weight: 400
-    color: #292B3F
-    font-family: 'Montserrat', sans-serif
 
   /**Price filter**/
 
