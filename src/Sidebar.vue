@@ -174,6 +174,7 @@
 
   .sidebar__currency-button
     padding: 14.5px 24px
+    margin-left: -1px
     font-size: 14px
     color: #292B3F
     font-weight: 500
@@ -181,9 +182,11 @@
     border: 1px solid #DBDBDB
     cursor: pointer
 
+
   .sidebar__currency-button:hover
     border: 1px solid #FCE144
     background: rgba(252,225,68, 0.2)
+    z-index: 2
 
   .sidebar__currency-button.active
     border: 1px solid #FCE144
@@ -192,6 +195,7 @@
   .sidebar__currency-button--left
     border-top-left-radius: 23px
     border-bottom-left-radius: 23px
+    z-index: 1
 
   .sidebar__currency-button--right
     border-top-right-radius: 23px
@@ -200,6 +204,9 @@
   .sidebar__currency-button--center
     border-right: 1px solid white
     border-left: 1px solid white
+
+  .sidebar__currency-button--center:hover .sidebar__currency-button--right
+    border-left: 0
 
   input[type="checkbox" i]
    width: 18px
