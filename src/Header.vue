@@ -15,7 +15,7 @@
             span.page-header__navigation-item About
             span
 
-        button.page-header__logIn-btn
+        button(type="button").page-header__logIn-btn
 </template>
 
 <script>

@@ -27,7 +27,7 @@ Vue.component ('catalog-item', {
   template:
             "<div class='card__container'> " +
                 "<div class='card__image'><img :src='gallery' alt=''>" +
-                  " <button class='card__like'></button></div>" +
+                  " <button type='button' class='card__like'></button></div>" +
                "<div class='card__content'>" +
                   "<h3 class='card__title'>{{title}}</h3>" +
                   "<a :href='address_link' class='card__address'>{{address}}</a> " +
