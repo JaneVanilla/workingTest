@@ -276,6 +276,7 @@
     margin-right: 10.8px
     opacity: 0
     z-index: 2
+    cursor: pointer
 
   .input-block input[type=checkbox]:checked ~ label:after
     background:  url("assets/checkbox.png") no-repeat center, #FCE144
